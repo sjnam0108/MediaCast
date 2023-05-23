@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    	<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    	<property name="connection.url">jdbc:mysql://summer.signcast.co.kr:3306/adnet2?createDatabaseIfNotExist=true</property>
+    	<property name="connection.username">adnet</property>
+    	<property name="connection.password">adnetfnd</property>
+    	<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+    	<property name="c3p0.min_size">1</property>
+    	<property name="c3p0.max_size">5</property>
+    	<property name="c3p0.timeout">300</property>
+    	<property name="c3p0.max_statements">50</property>
+    	<property name="c3p0.idle_test_period">3000</property>
+    	
+    	<property name="show_sql">true</property>
+    	<property name="format_sql">true</property>
+    	<property name="generate_statistics">true</property>
+	    <property name="current_session_context_class">thread</property>
+    	
+
+    	<mapping class="net.doohad.models.adc.AdcAd"/>
+    	<mapping class="net.doohad.models.adc.AdcAdCreative"/>
+    	<mapping class="net.doohad.models.adc.AdcAdTarget"/>
+    	<mapping class="net.doohad.models.adc.AdcCampaign"/>
+    	<mapping class="net.doohad.models.adc.AdcCreatFile"/>
+    	<mapping class="net.doohad.models.adc.AdcCreative"/>
+    	<mapping class="net.doohad.models.adc.AdcCreatTarget"/>
+
+    	<mapping class="net.doohad.models.adn.AdnExcelRow"/>
+    	
+    	<mapping class="net.doohad.models.fnd.FndCtntFolder"/>
+    	<mapping class="net.doohad.models.fnd.FndLoginLog"/>
+    	<mapping class="net.doohad.models.fnd.FndPriv"/>
+    	<mapping class="net.doohad.models.fnd.FndRegion"/>
+    	<mapping class="net.doohad.models.fnd.FndState"/>
+    	<mapping class="net.doohad.models.fnd.FndUserPriv"/>
+    	
+    	<mapping class="net.doohad.models.inv.InvScreen"/>
+    	<mapping class="net.doohad.models.inv.InvSite"/>
+
+    	<mapping class="net.doohad.models.knl.KnlAccount"/>
+    	<mapping class="net.doohad.models.knl.KnlMedium"/>
+    	<mapping class="net.doohad.models.knl.KnlMenu"/>
+    	<mapping class="net.doohad.models.knl.KnlUser"/>
+
+    	<mapping class="net.doohad.models.org.OrgAdvertiser"/>
+    	<mapping class="net.doohad.models.org.OrgMediumOpt"/>
+    	<mapping class="net.doohad.models.org.OrgPlaylist"/>
+    	<mapping class="net.doohad.models.org.OrgPlTarget"/>
+    	<mapping class="net.doohad.models.org.OrgSiteCond"/>
+
+    	<mapping class="net.doohad.models.rev.RevAdHourlyPlay"/>
+    	<mapping class="net.doohad.models.rev.RevAdSelCache"/>
+    	<mapping class="net.doohad.models.rev.RevAdSelect"/>
+    	<mapping class="net.doohad.models.rev.RevCreatDecn"/>
+    	<mapping class="net.doohad.models.rev.RevCreatHourlyPlay"/>
+    	<mapping class="net.doohad.models.rev.RevFbSelCache"/>
+    	<mapping class="net.doohad.models.rev.RevInvenRequest"/>
+    	<mapping class="net.doohad.models.rev.RevObjTouch"/>
+    	<mapping class="net.doohad.models.rev.RevPlayHist"/>
+    	<mapping class="net.doohad.models.rev.RevScrHourlyPlay"/>
+    	<mapping class="net.doohad.models.rev.RevScrHrlyFailTot"/>
+    	<mapping class="net.doohad.models.rev.RevScrHrlyFbTot"/>
+    	<mapping class="net.doohad.models.rev.RevScrHrlyNoAdTot"/>
+    	<mapping class="net.doohad.models.rev.RevScrHrlyPlyTot"/>
+    	<mapping class="net.doohad.models.rev.RevScrStatusLine"/>
+    	<mapping class="net.doohad.models.rev.RevSitHrlyPlyTot"/>
+
+    	<mapping class="net.doohad.models.sys.SysRtUnit"/>
+    	<mapping class="net.doohad.models.sys.SysSvcRespTime"/>
+    	<mapping class="net.doohad.models.sys.SysTmpHrlyEvent"/>
+    	<mapping class="net.doohad.models.sys.SysTmpStatusLine"/>
+    	
+    </session-factory>
+</hibernate-configuration>

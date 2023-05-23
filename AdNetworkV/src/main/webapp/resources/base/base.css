@@ -1,0 +1,272 @@
+.default-style .sidenav .app-brand.logo {
+  height: 59px;
+}
+
+.layout-1 .layout-sidenav .app-brand.logo,
+.layout-1 .layout-sidenav .app-brand.logo + .sidenav-divider,
+.layout-reversed .layout-2 .layout-sidenav .app-brand.logo {
+  display: none;
+}
+
+.layout-1 .layout-navbar .app-brand.logo,
+.layout-reversed .layout-2 .layout-navbar .app-brand.logo {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.layout-1 .layout-navbar .layout-sidenav-toggle,
+.layout-reversed .layout-2 .layout-navbar .layout-sidenav-toggle,
+.layout-offcanvas .layout-navbar .layout-sidenav-toggle,
+.layout-fixed-offcanvas .layout-navbar .layout-sidenav-toggle {
+  display: block !important;
+}
+
+.app-brand-text.logo-text {
+	font-size: 1.1rem;
+}
+
+.app-brand-logo.logo-frame {
+    display: -ms-flexbox;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #BE0000;
+}
+
+@media (min-width: 992px) {
+  .llayout-offcanvas .llayout-sidenav .llayout-sidenav-toggle,
+  .llayout-fixed-offcanvas .llayout-sidenav .llayout-sidenav-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 992px)
+.layout-collapsed:not(.layout-sidenav-hover):not(.layout-offcanvas):not(.layout-fixed-offcanvas) .layout-sidenav .app-brand-logo, .layout-collapsed:not(.layout-sidenav-hover):not(.layout-offcanvas):not(.layout-fixed-offcanvas) .layout-sidenav .app-brand-text {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* *****************************************************************************
+ *  Navbar
+ */
+
+.navbar-user .dropdown-toggle,
+.navbar-user.b-nav-dropdown .nav-link {
+  white-space: nowrap;
+}
+
+.navbar-user .user-info {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+@media (min-width: 992px) {
+  .navbar-user .dropdown-menu {
+    margin-top: .25rem;
+  }
+}
+
+
+/* *****************************************************************************
+ *  Toastr - custom css
+ */
+
+.toast-top-right-custom {
+  top: 12px;
+  right: 12px;
+  width: 12em;
+}
+
+
+/* *****************************************************************************
+ *  Long text column - custom css
+ */
+ 
+.long-cont-1 {
+  position: relative;
+  max-width: 100%;
+  padding: 0 !important;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  vertical-align: text-bottom !important;
+}
+
+.long-cont-2 {
+  position: absolute;
+  white-space: nowrap;
+  overflow-y: visible;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  max-width: 100%;
+  min-width: 0;
+  width:100%;
+  top: 0;
+  left: 0;
+}
+
+.long-cont-1:after, .long-cont-2:after {
+  content: '-';
+  display: inline;
+  visibility: hidden;
+  width: 0;
+}  
+
+
+/* *****************************************************************************
+ *  Alert modal
+ */
+
+ .modal-dialog-vertical-center {
+    -webkit-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    top: 30%;
+    margin: 0 auto;
+}
+
+.modal-sm.modal-dialog-vertical-center {
+    max-width: 20rem;
+}
+
+.modal-content-border-1 {
+	border: 1px solid rgba(24,28,33,0.2);
+}
+
+
+/* *****************************************************************************
+ *  Wait modal
+ */
+
+.wait-modal-sm {
+    -webkit-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    top: 30%;
+    margin: 0 auto;
+	max-width: 10rem;
+}
+
+.wait-modal-body {
+	padding: 1.5rem 0 0.5rem;
+}
+
+.wait-cube {
+	margin: 20px auto; width: 40px; height: 40px;
+}
+
+
+/* *****************************************************************************
+ *  Base styles
+ */
+
+.text-blue { color: #487df2; }
+.text-red { color: #df1616; }
+.text-orange { color: #ff7325; }
+.text-yellow { color: #f7bc1c; }
+.text-green { color: #70cc33; }
+.text-purple { color: #af52fe; }
+.text-gray { color: #646c6f; }
+.text-emerald { color: #499d94; }
+.text-navy { color: #445d73; }
+
+.bg-blue { background: #487df2; }
+.bg-red { background: #df1616; }
+.bg-orange { background: #ff7325; }
+.bg-yellow { background: #f7bc1c; }
+.bg-green { background: #70cc33; }
+.bg-purple { background: #af52fe; }
+.bg-gray { background: #646c6f; }
+.bg-emerald { background: #499d94; }
+.bg-navy { background: #445d73; }
+
+.fa-blank { visibility:hidden !important; }
+svg.svg-inline--fa.fa-blank.fa-w-16.check-mark { width: 0; }
+
+.scrollable-dropdown-menu {
+	height: auto;
+	max-height: 220px;
+	overflow-x: hidden;
+}
+
+.border-none div.k-multiselect-wrap {
+	border-style: none;
+}
+
+.border-none span.k-picker-wrap.k-state-default {
+	border-style: none;
+}
+
+.border-none span.k-picker-wrap.k-state-disabled {
+	border-style: none;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+
+/* *****************************************************************************
+ *  Modal styles
+ */
+
+.modal.modal-level-minus-2 {
+    z-index: 1801 !important;
+}
+.modal-backdrop.modal-level-minus-2 {
+    z-index: 1800 !important;
+}
+.modal.modal-level-minus-1 {
+    z-index: 1901 !important;
+}
+.modal-backdrop.modal-level-minus-1 {
+    z-index: 1900 !important;
+}
+.modal.modal-level {
+    z-index: 2001 !important;
+}
+.modal-backdrop.modal-level {
+    z-index: 2000 !important;
+}
+.modal.modal-level-plus-1 {
+    z-index: 2101 !important;
+}
+.modal-backdrop.modal-level-plus-1 {
+    z-index: 2100 !important;
+}
+.modal.modal-level-plus-2 {
+    z-index: 2201 !important;
+}
+.modal-backdrop.modal-level-plus-2 {
+    z-index: 2200 !important;
+}
+.modal.modal-level-top {
+    z-index: 3001 !important;
+}
+.modal-backdrop.modal-level-top {
+    z-index: 3000 !important;
+}
+.move-cursor { cursor: move; }
+.modal-bg-color {
+	background-color: #f8f8f8;
+}
+
+
+/* *****************************************************************************
+ *  Tag styles
+ */
+
+.tag {
+	color: #fff;  cursor: default;  font-size: 0.9rem;  font-weight: 400;
+}
